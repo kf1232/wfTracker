@@ -1,6 +1,6 @@
 import './body.css'
 
-import Item from './item/itemLoader'
+import Component from './consumable/consumableLoader'
 import Warframe from './warframe/warframeLoader'
 import Primary from './weaponsPrimary/primaryLoader'
 import Secondary from './weaponsSecondary/secondaryLoader'
@@ -9,7 +9,7 @@ import Mele from './weaponsMele/meleLoader'
 function Body() {
     return (
         <div>
-            <Item />
+            <Component />
             <Warframe />
             <Primary />
             <Secondary />
