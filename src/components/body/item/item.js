@@ -10,6 +10,7 @@ function Item({ item: { name,  imageName} }){
             </div>
             <div class='infoBox'>
                 {name}
+                <input type='checkbox'/>
             </div> 
         </div>
     )
