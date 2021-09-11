@@ -1,10 +1,16 @@
 import './item.css'
 
-function Item({ item: { name } }){
+function Item({ item: { name,  imageName} }){
     return(
-        <div>
-            <h4>Item</h4>
-            {name} 
+        <div class='item'>
+            <div class='imgBox'>
+                <img 
+                  src={`https://cdn.warframestat.us/img/${imageName}`} 
+                  alt={imageName} />
+            </div>
+            <div class='infoBox'>
+                {name}
+            </div> 
         </div>
     )
 }

@@ -7,7 +7,7 @@ function Secondary(){
     const secondary = (new Items({ category: ['Secondary'] } )).filter(i => i.category === 'Secondary');
 
     return(
-        <div>
+        <div class='loader'>
             <h1>Secondary</h1>
             {secondary.map( (wep) =>
                 <Item key = {wep.name} item = {wep}/>

@@ -7,7 +7,7 @@ function Primary(){
     const primary = (new Items({ category: ['Primary'] } )).filter(i => i.category === 'Primary');
 
     return(
-        <div>
+        <div class='loader'>
             <h1>Primary</h1>
             {primary.map( (wep) =>
                 <Item key = {wep.name} item = {wep}/>

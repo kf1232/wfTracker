@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300&display=swap');
+
+
+.item{
+    width: 250px;
+    margin: 3px;
+    background-image: url('../../../resources/backgroundGrid.png');
+}
+
+.infoBox{
+    background-color: whitesmoke;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px 5px;
+    text-transform: uppercase;
+    font-family: 'Azeret Mono', monospace;
+}
+
+.imgBox{
+    
+
+}
+.imgBox>img{
+    width: 100%;
+    height: auto;
+}

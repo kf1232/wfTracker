@@ -7,7 +7,7 @@ function Melee(){
     const melee = (new Items({ category: ['Melee'] } )).filter(i => i.category === 'Melee');
 
     return(
-        <div>
+        <div class='loader'>
             <h1>Melee</h1>
             {melee.map( (wep) =>
                 <Item key = {wep.name} item = {wep}/>
