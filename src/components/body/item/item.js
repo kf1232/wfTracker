@@ -1,5 +1,4 @@
 import './item.css'
-import React from "react"
 
 function Item({ item: { name } }){
     return(
