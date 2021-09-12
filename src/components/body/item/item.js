@@ -1,6 +1,6 @@
 import './item.css'
 
-function Item({ item: { name,  imageName} }){
+function Item({ item: { name,  imageName, masteryReq} }){
     return(
         <div class='item'>
             <div class='imgBox'>
@@ -9,8 +9,7 @@ function Item({ item: { name,  imageName} }){
                   alt={imageName} />
             </div>
             <div class='infoBox'>
-                {name}
-                <input type='checkbox'/>
+                {masteryReq} {name}
             </div> 
         </div>
     )
