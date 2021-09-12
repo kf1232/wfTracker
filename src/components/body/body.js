@@ -22,10 +22,10 @@ function Body() {
     return (
         <div>
             <div>
-                <button onClick={() => setWFState(!wfState)}> Warframe {wfState} </button>
-                <button onClick={() => setPMState(!pmState)}> Primary {pmState} </button>
-                <button onClick={() => setSEState(!seState)}> Primary {seState} </button>
-                <button onClick={() => setMEState(!meState)}> Primary {meState} </button>
+                <button onClick={() => setWFState(!wfState)}> Warframe </button>
+                <button onClick={() => setPMState(!pmState)}> Primary </button>
+                <button onClick={() => setSEState(!seState)}> Secondary </button>
+                <button onClick={() => setMEState(!meState)}> Melee </button>
             </div>
             {wfState ? <CoreLoader list={warframeList}/> : null}
             {pmState ? <CoreLoader list={primaryList}/> : null}
