@@ -7,11 +7,12 @@ function Item({ item: { name,  imageName, masteryReq} }){
     return(
         !completed ? 
             <div class='item'>
+                <button onClick={() => setCompleted(!completed)}> X </button>
                 <img src={`https://cdn.warframestat.us/img/${imageName}`} 
                      alt={imageName} />
                 <div class='infoBox'>
-                    {masteryReq} {name} <button onClick={() => setCompleted(!completed)}> X </button>
-                </div> 
+                    {masteryReq} {name}
+                </div>                 
             </div>
         
         : null
