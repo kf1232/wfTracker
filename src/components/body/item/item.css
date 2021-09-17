@@ -21,12 +21,7 @@
     text-transform: uppercase;
     font-family: 'Azeret Mono', monospace;
 }
-
-.imgBox{
-
-}
-
-.imgBox>img{
+.item>img{
     vertical-align: bottom;
     width: 100%; 
 }

@@ -1,7 +1,5 @@
 import './body.css'
-
 import React, {useState} from 'react';
-
 import CoreLoader from './itemGroup/coreLoader'
 
 const Items = require('warframe-items')

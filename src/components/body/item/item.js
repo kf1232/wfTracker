@@ -1,17 +1,20 @@
 import './item.css'
+import React, {useState} from 'react';
 
 function Item({ item: { name,  imageName, masteryReq} }){
+    const [completed, setCompleted] = useState(false);
+
     return(
-        <div class='item'>
-            <div class='imgBox'>
-                <img 
-                  src={`https://cdn.warframestat.us/img/${imageName}`} 
-                  alt={imageName} />
+        !completed ? 
+            <div class='item'>
+                <img src={`https://cdn.warframestat.us/img/${imageName}`} 
+                     alt={imageName} />
+                <div class='infoBox'>
+                    {masteryReq} {name} <button onClick={() => setCompleted(!completed)}> X </button>
+                </div> 
             </div>
-            <div class='infoBox'>
-                {masteryReq} {name}
-            </div> 
-        </div>
+        
+        : null
     )
 }
 
