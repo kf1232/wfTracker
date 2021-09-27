@@ -1,4 +1,5 @@
 import Item from '../item/item'
+import React from 'react'
 
 function CoreLoader(props){
     return(
