@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
 
-import itemReducer from './itemstate.js'
+import itemReducer from './itemstate'
 
 const saveToLocalStorage = (state) => {
     try {
@@ -24,14 +24,12 @@ const loadFromLocalStorage = () => {
 
 const store = configureStore({
     reducer: {
-        item: itemReducer, //store.item.{value}
+        item: itemReducer,
     },
     preloadedState: loadFromLocalStorage()
 
 })
 
 store.subscribe( () => saveToLocalStorage( store.getState() ) )
-
-
 
 export default store

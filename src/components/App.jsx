@@ -1,14 +1,13 @@
 import './App.css';
 import React from 'react'
 
-import Body from './body/body';
-import Footer from './footer/footer';
-import Header from './header/header';
+import Body from './body/body.jsx';
+import Footer from './footer/footer.jsx';
+import Header from './header/header.jsx';
 
 function App() {
   return (
     <div>
-      <h1>text</h1>
       <Header />
       <Body />
       <Footer />
