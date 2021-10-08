@@ -12,6 +12,8 @@ function Body() {
     const [meState, setMEState] = useState(true);
 
     var dataPull = new Items({ category: ['Warframes', 'Primary', 'Secondary', 'Melee'] });
+
+    
     var warframeList  = useState(dataPull.filter(i => i.category === 'Warframes'));
     var primaryList   = useState(dataPull.filter(i => i.category === 'Primary'));
     var secondaryList = useState(dataPull.filter(i => i.category === 'Secondary'));
